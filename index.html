@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia Translator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎥 Multimedia Translator</h1>
+  <input type="file" id="inputFile" accept=".txt,image/,video/">
+  <button onclick="processFile()">Translate & Encrypt</button>
+
+  <h2>Encrypted Output:</h2>
+  <textarea id="encryptedText" readonly></textarea>
+  <button onclick="decryptText()">🔓 Decrypt</button>
+
+  <h2>Decrypted Output:</h2>
+  <textarea id="decryptedText" readonly></textarea>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+  <script src="crypto.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
